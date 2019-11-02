@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Email List</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+
+  <link rel="stylesheet" href="style.css">  
+</head>
+<body>
+  <div class="wrapper">
+		<header>
+			<h2>Email List</h2>
+			<form id="search-note">
+				<input type="text" placeholder="Search Email...">
+			</form>
+		</header>
+		<div class="note-list">   
+			<ul id="list">
+        <li>                     
+					<p>homies@gmail.com</p> 
+          <p><i class="fa fa-square-o"></i><i class="fa fa-trash"></i></p>              
+				</li>
+				<li>
+					<p>Someone@personal.com</p>
+					<p><i class="fa fa-square-o"></i><i class="fa fa-trash"></i></p>				
+				</li>
+				<li>
+					<p>jokerent@jio.com</p>
+					<p><i class="fa fa-square-o"></i><i class="fa fa-trash"></i></p>					
+				</li>
+			</ul>
+		</div>
+		<div id="hide-list">
+        <label for="hide">Show only Enable</label>
+        <input type="checkbox" id="hide" />     
+    </div>
+    <label>Check the boxes to enable emails</label>
+		<div id="add-notes">
+			<form id="add">
+				<input type="email" placeholder="Add an Email.." id="add-input">
+        <input type="submit"  value="Add" id="add-btn">
+        <span class="error" aria-live="polite"></span>
+			</form>
+		</div>
+  </div>
+</body>
+<script src="script.js"></script>
+</html>
